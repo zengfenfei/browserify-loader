@@ -5,7 +5,7 @@
   "main": "example/bar.js",
   "scripts": {
     "test": "node test",
-    "build": "browserify -t 6to5ify src/main.js > browserify-loader.js && uglifyjs browserify-loader.js -o browserify-loader.min.js"
+    "prepublish": "scripts/build.sh"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,8 @@
     "coffee-script": "^1.7.1",
     "react": "^0.12.1",
     "react-tools": "^0.12.1",
-    "xhr": "^2.0.1",
-    "searequire": "^1.5.3"
+    "searequire": "^1.5.3",
+    "uglifyjs": "^2.4.10",
+    "xhr": "^2.0.1"
   }
 }

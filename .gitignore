@@ -2,6 +2,9 @@
 logs
 *.log
 
+browserify-loader.js
+browserify-loader.min.js
+
 # Runtime data
 pids
 *.pid
