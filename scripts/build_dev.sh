@@ -7,4 +7,4 @@ cd `dirname $0`/..
 
 outDir=.
 mkdir -p $outDir
-browserify src/main.js > $outDir/browserify-loader.js
+watchify src/main.js -o $outDir/browserify-loader.js -v

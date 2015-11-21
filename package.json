@@ -33,6 +33,7 @@
     "react-tools": "^0.12.1",
     "searequire": "^1.5.3",
     "uglifyjs": "^2.4.10",
+    "watchify": "^3.6.1",
     "xhr": "^2.0.1"
   }
 }
