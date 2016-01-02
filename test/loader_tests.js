@@ -19,6 +19,12 @@ var loaderCases = [{
 }, {
 	name: 'load from node_modules',
 	module: 'nm'
+}, {
+	name: 'load from topper level node_modules',
+	module: 'uglifyjs'
+}, {
+	name: 'load core module',
+	module: 'events'
 }];
 loaderCases.forEach(testLoaderCase)
 

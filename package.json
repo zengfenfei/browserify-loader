@@ -35,5 +35,8 @@
     "uglifyjs": "^2.4.10",
     "watchify": "^3.6.1",
     "xhr": "^2.0.1"
+  },
+  "dependencies": {
+    "events": "^1.1.0"
   }
 }
