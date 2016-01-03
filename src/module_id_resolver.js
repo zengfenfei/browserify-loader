@@ -69,7 +69,13 @@ function loadAsDirectory(x, action, tries) {
     tries.push(reason)
     return {};
   }).then(function(pkgInfo) {
-    var moduleIdInFolder = path.join(x, pkgInfo.main || 'index')
+    var browserVersion = pkgInfo.browser
+    if (typeof browserVersion != 'string' ) {
+      //TODO parse broser field of package.json
+      browserVersion && console.warn('@Fail to parse browser field of package.json in ' + x, pkgInfo.browser)
+      browserVersion = null
+    }
+    var moduleIdInFolder = path.join(x, browserVersion || pkgInfo.main || 'index')
     folderModuleCache[x] = moduleIdInFolder
     return loadAsFile(moduleIdInFolder, action, tries)
   });

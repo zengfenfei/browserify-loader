@@ -7,3 +7,5 @@ console.log('@@@@@ This is module content. this == exports', this == exports, mo
 exports.foo = function () {
   console.log('foo')
 }
+
+console.log('core module util', require('util'))
