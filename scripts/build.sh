@@ -5,6 +5,8 @@ cd `dirname $0`/..
 
 . scripts/env_setup.sh
 
-outDir=.
+outDir=./out
 mkdir -p $outDir
-browserify -t 6to5ify src/main.js > $outDir/browserify-loader.js && uglifyjs $outDir/browserify-loader.js -o $outDir/browserify-loader.min.js
+browserify src/main.js > $outDir/browserify-loader.js && uglifyjs $outDir/browserify-loader.js -o $outDir/browserify-loader.min.js
+
+echo =========Build Finish==========

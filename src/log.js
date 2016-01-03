@@ -1,6 +1,6 @@
 "use strict";
 
-var debug = false
+var debug = true
 module.exports = function () {
   debug && console.log.apply(console, arguments)
 }
