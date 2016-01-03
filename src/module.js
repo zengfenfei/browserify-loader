@@ -1,10 +1,7 @@
 "use strict";
 
 var path = require('path')
-var xhr = require('xhr')
 var parseDependencies = require('searequire')
-var url = require('url')
-var log = require('./log')
 var loadAModule = require('./module_loader.js').load
 
 //https://nodejs.org/api/modules.html#modules_the_module_object

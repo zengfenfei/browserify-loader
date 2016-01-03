@@ -2,7 +2,6 @@
 
 var resolveModule = require('./module_id_resolver.js').resolve
 var xhr = require('xhr')
-var path = require('path')
 
 // check resource exists
 function loadText(uri) {

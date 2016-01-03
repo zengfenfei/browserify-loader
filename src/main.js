@@ -1,35 +1,7 @@
 "use strict";
-
-/*var xhr = require('xhr')
-var Module = require('./module')
-var url = require('url')
-var to5Transform = require('6to5/lib/6to5/transformation/transform')
-var loadModule = require('./module_loader')
-
-Module.registerExtension('js', (script) => script)
-
-Module.registerExtension('6.js', function(script) {
-  return to5Transform(script, {modules: "common", blacklist: ["react"]}).code
-})
-
-Module.registerExtension('json', (script) => `module.exports = ${script}`)
-
-Module.registerExtension('jsx', function(script) {
-  return to5Transform(script, {modules: "common"}).code
-})
-
-define = window.define = Module.define
-define.performance = Module.performance
-define.registerExtension = Module.registerExtension
-
-function createMainModule(uri, from) {
-  var mainModule = new Module(uri, from)
-}*/
-
 var module = require('./module.js');
 
 function loadAndDefineModules (mainModulePath) {
-  //console.log('Loading mainModule ', mainModulePath);
   module.load(mainModulePath).then(function(m) {
     console.log('Main module ready', m)
     console.warn('===================Ignore Errors above this line===================')
