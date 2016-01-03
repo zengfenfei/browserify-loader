@@ -52,9 +52,9 @@ function defineModule(content, id) {
   if (sourceTransforms[ext]) {
     source = sourceTransforms[ext](source)
   }
-  var code = Module.defineFuncName + '("' + id + '", function(require, exports, module) {' +
-    source + '})\n' +
-    '//# sourceURL=' + id;
+  var code = Module.defineFuncName + '("' + id + '", function(require, exports, module) {\n' +
+    source +
+    '\n})//# sourceURL=' + location.origin + id;
 
   var scriptNode = document.createElement('script')
   scriptNode.innerHTML = code
