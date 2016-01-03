@@ -1,4 +1,5 @@
 //var xhr = require('xhr')
+document.body.innerHTML += "<p>The main module loaded</p>";
 console.log('Before require')
 var Dog = require('./dog')
 console.log('After require', Dog)
@@ -9,3 +10,5 @@ exports.foo = function () {
 }
 
 console.log('core module util', require('util'))
+
+
