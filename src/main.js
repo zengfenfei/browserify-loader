@@ -2,8 +2,10 @@
 var module = require('./module.js');
 
 function loadAndDefineModules (mainModulePath) {
+  var timeStart = Date.now()
   module.load(mainModulePath).then(function(m) {
     console.log('Main module ready', m)
+    console.log('Time elapsed', Date.now() - timeStart)
     console.warn('===================Ignore Errors above this line===================')
     console.warn('===================================================================')
     m.execute()
@@ -20,7 +22,7 @@ function loadAndDefineModules (mainModulePath) {
  3. excute main moodule
 */
 function bootstrap() {
-  performance.mark('bootstrap_start')
+  //performance.mark('bootstrap_start') //Not supported in safari
   var blScript = document.currentScript || document.getElementById('bl-script')
   var mainModule = blScript.getAttribute('main') || './';
 
