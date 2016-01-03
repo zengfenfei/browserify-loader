@@ -1,15 +1,14 @@
 {
-  "name": "browserify-loader",
-  "version": "0.5.2",
-  "description": "Another CommonJS Loader[ES6 support]",
-  "main": "example/bar.js",
+  "name": "browserify-loader2",
+  "version": "1.0.0",
+  "description": "Another CommonJS Loader",
   "scripts": {
     "test": "node test",
     "prepublish": "scripts/build.sh"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/island205/browserify-loader.git"
+    "url": "git@github.com:zengfenfei/browserify-loader.git"
   },
   "keywords": [
     "commonjs",
@@ -17,12 +16,12 @@
     "loader",
     "browserify"
   ],
-  "author": "island205@gmail.com",
+  "author": "zengfenfei@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/island205/browserify-loader/issues"
+    "url": "https://github.com/zengfenfei/browserify-loader/issues"
   },
-  "homepage": "https://github.com/island205/browserify-loader",
+  "homepage": "https://github.com/zengfenfei/browserify-loader",
   "devDependencies": {
     "qunitjs": "^1.20.0",
     "searequire": "^1.5.3",
