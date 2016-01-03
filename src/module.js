@@ -60,7 +60,7 @@ function defineModule(content, id) {
   scriptNode.innerHTML = code
   document.body.appendChild(scriptNode)
   if (module.factory instanceof Function) {
-    //scriptNode.remove()
+    scriptNode.remove()
     return loadDependencies(content, id, module).then(function(children) {
       return module
     })
