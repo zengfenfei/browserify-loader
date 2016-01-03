@@ -34,7 +34,7 @@ Module.prototype.execute = function() {
   try {
     this.factory.call(this.exports, this.require, this.exports, this)
   } catch (e) {
-    console.error('Error of module' + this.id, e)
+    console.error(e.stack)
   }
   return this.exports
 };
