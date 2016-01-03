@@ -31,7 +31,9 @@ var module = require('./module.js');
 function loadAndDefineModules (mainModulePath) {
   //console.log('Loading mainModule ', mainModulePath);
   module.load(mainModulePath).then(function(m) {
-    console.log('loaded', m)
+    console.log('Main module ready', m)
+    console.warn('===================Ignore Errors above this line===================')
+    console.warn('===================================================================')
     m.execute()
   }, function(err) {
     console.error('Fail to load mainModule', err)
