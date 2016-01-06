@@ -18,13 +18,13 @@ A CommonJS Loader for browserify workflow.
 
 ### Install
 
-Download `browserify-loader`  with `npm` or  `bower`:
+Download `browserify-loader`  with `npm`:
 
 ```bash
-$ npm install browserify-loader
+$ npm install browserify-loader2
 ```
 
-Put  `browserify-loader.js` in your page:
+Put  `browserify-loader.min.js` in your page:
 
 ```html
 <!DOCTYPE html>
@@ -33,7 +33,7 @@ Put  `browserify-loader.js` in your page:
   <title></title>
 </head>
 <body>
-    <script main="./app.js" src="node_modules/browserify-loader/out/browserify-loader.min.js"></script>
+    <script main="./app.js" src="node_modules/browserify-loader2/out/browserify-loader.min.js"></script>
 </body>
 </html>
 ```
