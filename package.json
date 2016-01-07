@@ -1,7 +1,7 @@
 {
   "name": "browserify-loader2",
-  "version": "1.0.1",
-  "description": "Another CommonJS Loader",
+  "version": "1.0.2",
+  "description": "The browser-side node.js module loader",
   "scripts": {
     "test": "node test",
     "prepublish": "scripts/build.sh"
